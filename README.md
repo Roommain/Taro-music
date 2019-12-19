@@ -1,20 +1,14 @@
 ## 基于Taro实现的音乐播放微信小程序
 
-github地址：[基于Taro微信小程序音乐播放器](https://github.com/zhangZhiHao1996/react-music-master)  
+github地址：[基于Taro微信小程序音乐播放器](https://github.com/Roommain/Taro-music)  
 接口地址：[网易云音乐 API](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
 <hr/>
 
 ### 技术栈
  - react 
- - react-router
- - mobx
- - fetch
- - antd-mobile
- - better-scroll
- - ES6
- - less
-
-项目由`create-react-app`脚手架搭建，并用`react-app-rewired`进行扩展了配置（`react-app-rewired`高版本的配置方法会改变，所以我用的是`react-app-rewired@2.0.2-next.0`）
+ - Taro
+ - Taro-ui
+ - 微信小程序
 
 <br/>
 
