@@ -59,16 +59,9 @@ github地址：[基于Taro微信小程序音乐播放器](https://github.com/Roo
 首先克隆本项目
 
 ```shell
-git clone https://github.com/zhangZhiHao1996/react-music-master.git
+git clone https://github.com/Roommain/Taro-music.git
 ```
 
-进入项目并安装依赖然后运行项目
-
-```shell
-cd react-music-master
-yarn install 
-yarn start
-```
 
 克隆接口项目
 
