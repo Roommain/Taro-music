@@ -1,0 +1,3 @@
+<block wx:if="{{$taroCompReady}}">
+    <h-1>个人</h-1>
+</block>

@@ -1,0 +1,66 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="tags">
+            <block>
+                <block wx:if="{{tagName == '全部'}}">
+                    <at-tag compid="{{$compid__42}}">全部</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__43}}">全部</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '华语'}}">
+                    <at-tag compid="{{$compid__44}}">华语</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__45}}">华语</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '古风'}}">
+                    <at-tag compid="{{$compid__46}}">古风</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__47}}">古风</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '欧美'}}">
+                    <at-tag compid="{{$compid__48}}">欧美</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__49}}">欧美</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '流行'}}">
+                    <at-tag compid="{{$compid__50}}">流行</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__51}}">流行</at-tag>
+                </block>
+            </block>
+        </view>
+        <view class="at-row at-row--wrap recommended">
+            <block>
+                <block wx:if="{{songMenuList.length != 0}}">
+                    <view class="at-col at-col-6" wx:key="$original.id" bindtap="anonymousFunc0" wx:for="{{loopArray15}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                        <view class="recommendedImg">
+                            <image class="recommended-img" src="{{item.$original.coverImgUrl}}"></image>
+                            <view class="headset">
+                                <image class="headset-img" src="{{imgsrc}}"></image>
+                            </view>
+                        </view>
+                        <view class="recommended-name">{{item.$original.name}}</view>
+                    </view>
+                </block>
+                <block wx:else>
+                    <view class="img-box">
+                        <image class="no-data-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575102627721&di=9785845886184a9d2e6f871f3c442408&imgtype=0&src=http%3A%2F%2Fimg.58cdn.com.cn%2Fdist%2Fjxedt%2Fpc%2Fproducts%2Fjxregister%2Fimages%2Fno_data.png"></image>
+                    </view>
+                </block>
+            </block>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,59 @@
+
+.mv-box {
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+  color: white;
+}
+.mvImg {
+  margin: 2%;
+  width: 96%;
+  height: 100%;
+}
+.mv-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.at-tag {
+  margin: 10rpx;
+}
+.tags {
+  text-align: center;
+}
+.bofang {
+  position: absolute;
+  top: 114rpx;
+  left: 45%;
+  width: 128rpx;
+  height: 128rpx;
+}
+.bofang-img {
+  width: 100%;
+  height: 100%;
+}
+.mv-name {
+  overflow: hidden;
+  position: absolute;
+  top: 20rpx;
+  left: 50rpx;
+  width: 600rpx;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.artist-name {
+  position: absolute;
+  top: 80rpx;
+  left: 50rpx;
+  font-size: 30rpx;
+}
+.play-count {
+  font-size: 30rpx;
+}
+.index {
+  position: absolute;
+  top: 200rpx;
+  left: 50rpx;
+  font-size: 100rpx;
+}

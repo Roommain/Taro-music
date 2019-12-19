@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index",
+    "at-slider": "../../npm/taro-ui/dist/weapp/components/slider/index",
+    "at-message": "../../npm/taro-ui/dist/weapp/components/message/index"
+  },
+  "navigationBarTitleText": "音乐播放"
+}

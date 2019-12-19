@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "at-tabs": "../../../npm/taro-ui/dist/weapp/components/tabs/index",
+    "at-tabs-pane": "../../../npm/taro-ui/dist/weapp/components/tabs-pane/index",
+    "at-icon": "../../../npm/taro-ui/dist/weapp/components/icon/index",
+    "at-load-more": "../../../npm/taro-ui/dist/weapp/components/load-more/index",
+    "at-card": "../../../npm/taro-ui/dist/weapp/components/card/index"
+  },
+  "navigationBarTitleText": "歌手详情"
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "at-search-bar": "../../npm/taro-ui/dist/weapp/components/search-bar/index",
+    "at-tag": "../../npm/taro-ui/dist/weapp/components/tag/index",
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index"
+  },
+  "navigationBarTitleText": "搜索"
+}

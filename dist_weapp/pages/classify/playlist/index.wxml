@@ -1,0 +1,21 @@
+<block wx:if="{{$taroCompReady}}">
+    <div>
+        <view>
+            <image class="img" src="{{coverImgUrl}}"></image>
+        </view>
+        <view class="{{songId == item.$original.id ? 'list clearfix active-list' : 'list clearfix'}}" wx:key="$original.id" bindtap="anonymousFunc0" wx:for="{{loopArray13}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+            <view class="index">{{index + 1}}</view>
+            <view class="left">
+                <image class="singerImg" src="{{item.$original.al.picUrl}}"></image>
+            </view>
+            <view class="right">
+                <view class="name">{{item.$original.name}}</view>
+                <view class="synopsis">{{item.$original.ar[0].name}}-{{item.$original.name}}</view>
+            </view>
+            <view class="play">
+                <at-icon compid="{{item.$compid__20}}"></at-icon>
+            </view>
+        </view>
+        <at-load-more compid="{{$compid__21}}"></at-load-more>
+    </div>
+</block>

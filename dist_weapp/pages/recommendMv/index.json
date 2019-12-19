@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "at-tag": "../../npm/taro-ui/dist/weapp/components/tag/index"
+  },
+  "navigationBarTitleText": "MV榜单"
+}

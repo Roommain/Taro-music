@@ -1,0 +1,21 @@
+<block wx:if="{{$taroCompReady}}">
+    <div>
+        <view class="list clearfix" wx:key="$original" bindtap="anonymousFunc0" wx:for="{{loopArray6}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+            <view class="left">
+                <image class="singerImg" src="{{item.$original.coverImgUrl}}"></image>
+            </view>
+            <view class="right">
+                <view>{{item.$original.name}}</view>
+                <view wx:key="index" class="name" wx:for="{{item.$original.tracks}}" wx:for-item="song" wx:for-index="index">{{index + 1}}.{{song.first}}- {{song.second}}</view>
+            </view>
+        </view>
+        <view class="at-row at-row--wrap recommended">
+            <view class="at-col at-col-4" wx:key="$original" bindtap="anonymousFunc1" wx:for="{{loopArray7}}" wx:for-item="item" wx:for-index="__index1" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey2}}">
+                <view class="recommendedImg">
+                    <image class="recommended-img" src="{{item.$original.coverImgUrl}}"></image>
+                </view>
+                <view class="recommended-name">{{item.$original.name}}</view>
+            </view>
+        </view>
+    </div>
+</block>

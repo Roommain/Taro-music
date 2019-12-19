@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "at-grid": "../../npm/taro-ui/dist/weapp/components/grid/index",
+    "at-list": "../../npm/taro-ui/dist/weapp/components/list/index",
+    "at-list-item": "../../npm/taro-ui/dist/weapp/components/list/item/index"
+  },
+  "navigationBarTitleText": "音乐"
+}

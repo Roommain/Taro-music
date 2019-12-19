@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "at-tag": "../../npm/taro-ui/dist/weapp/components/tag/index"
+  },
+  "navigationBarTitleText": "精品歌单"
+}

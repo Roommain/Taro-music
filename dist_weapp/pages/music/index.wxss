@@ -1,0 +1,103 @@
+
+.img {
+  width: 100%;
+  height: 350rpx;
+  background-size: cover;
+}
+.singerImg {
+  margin: 0 auto;
+  width: 160rpx;
+  height: 160rpx;
+}
+.singer-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: contain;
+}
+.recommendedImg {
+  position: relative;
+  margin: 0 auto;
+  width: 220rpx;
+  height: 220rpx;
+}
+.recommended-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30rpx;
+  background-size: contain;
+}
+.singer-name {
+  font-size: 24rpx;
+  text-align: center;
+}
+.recommended-name {
+  overflow: hidden;
+  width: 220rpx;
+  margin: 0 20rpx;
+  white-space: normal;
+  font-size: 24rpx;
+}
+.come-play {
+  position: fixed;
+  top: 45%;
+  right: -45rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #d9e7e9;
+}
+.at-icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.rotate {
+  -webkit-animation: rotateAnimation 16s linear infinite;
+          animation: rotateAnimation 16s linear infinite;
+}
+.rotate-pause {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+@-webkit-keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.movable-area {
+  position: fixed;
+  width: 100%;
+  height: 98vh;
+  z-index: 100;
+}
+.movable-view {
+  position: fixed;
+}
+.headset {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  z-index: 10;
+  width: 40rpx;
+  height: 40rpx;
+}
+.headset-img {
+  width: 100%;
+  height: 100%;
+}

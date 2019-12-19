@@ -1,0 +1,118 @@
+
+.list {
+  position: relative;
+  width: 100%;
+  height: 120rpx;
+  margin: 15rpx 0;
+  border-bottom: 1rpx solid rgba(197, 193, 193, 0.5);
+}
+.mv-list {
+  position: relative;
+  width: 100%;
+  height: 200rpx;
+  margin: 15rpx 0;
+  border-bottom: 1rpx solid rgba(197, 193, 193, 0.5);
+}
+.singerImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.albumImg {
+  width: 100rpx;
+  height: 100rpx;
+}
+.mv-img {
+  position: relative;
+  width: 180rpx;
+  height: 180rpx;
+}
+.img {
+  width: 100%;
+  background-size: cover;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.index {
+  position: absolute;
+  left: 20rpx;
+  line-height: 90rpx;
+}
+.left {
+  position: absolute;
+  left: 70rpx;
+}
+.right {
+  position: absolute;
+  left: 200rpx;
+  font-size: 26rpx;
+}
+.album-left {
+  position: absolute;
+  left: 20rpx;
+}
+.album-right {
+  position: absolute;
+  left: 150rpx;
+  font-size: 26rpx;
+}
+.mv-left {
+  position: absolute;
+  left: 20rpx;
+}
+.mv-right {
+  position: absolute;
+  left: 240rpx;
+  font-size: 26rpx;
+}
+.icon {
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  z-index: 10;
+  color: #fff;
+  font-size: 24rpx;
+}
+.name {
+  overflow: hidden;
+  width: 450rpx;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.synopsis {
+  margin-top: 10rpx;
+  overflow: hidden;
+  width: 450rpx;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(197, 193, 193, 0.8);
+}
+.play {
+  position: absolute;
+  top: 10rpx;
+  left: 650rpx;
+}
+.card {
+  margin-top: 10rpx;
+}
+.img-box {
+  width: 400rpx;
+  height: 400rpx;
+  margin: auto;
+}
+.no-data-img {
+  width: 100%;
+  height: 100%;
+}
+.active-list {
+  color: #22cdf8;
+}

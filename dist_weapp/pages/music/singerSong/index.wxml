@@ -1,0 +1,78 @@
+<block wx:if="{{$taroCompReady}}">
+    <div>
+        <view>
+            <image class="img" src="{{coverImgUrl}}"></image>
+        </view>
+        <at-tabs compid="{{$compid__11}}">
+            <at-tabs-pane compid="{{$compid__12}}">
+                <view>
+                    <view class="{{songId == item.$original.id ? 'list clearfix active-list' : 'list clearfix'}}" wx:key="$original.id" bindtap="anonymousFunc0" wx:for="{{loopArray9}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                        <view class="index">{{index + 1}}</view>
+                        <view class="left">
+                            <image class="singerImg" src="{{item.$original.al.picUrl}}"></image>
+                        </view>
+                        <view class="right">
+                            <view class="name">{{item.$original.name}}</view>
+                            <view class="synopsis">{{item.$original.ar[0].name}}-{{item.$original.name}}</view>
+                        </view>
+                        <view class="play">
+                            <at-icon compid="{{item.$compid__9}}"></at-icon>
+                        </view>
+                    </view>
+                    <at-load-more compid="{{$compid__13}}"></at-load-more>
+                </view>
+            </at-tabs-pane>
+            <at-tabs-pane compid="{{$compid__14}}">
+                <view>
+                    <block>
+                        <block wx:if="{{singerAlbumList.length != 0}}">
+                            <view class="list clearfix" wx:key="$original.id" bindtap="anonymousFunc1" wx:for="{{loopArray10}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey2}}">
+                                <view class="album-left">
+                                    <image class="albumImg" src="{{item.$original.blurPicUrl}}"></image>
+                                </view>
+                                <view class="album-right">
+                                    <view class="name">{{item.$original.name}}</view>
+                                    <view class="synopsis">{{item.$loopState__temp2}}-歌曲{{item.$original.size}}</view>
+                                </view>
+                            </view>
+                        </block>
+                        <block wx:else>
+                            <view class="img-box">
+                                <image class="no-data-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575102627721&di=9785845886184a9d2e6f871f3c442408&imgtype=0&src=http%3A%2F%2Fimg.58cdn.com.cn%2Fdist%2Fjxedt%2Fpc%2Fproducts%2Fjxregister%2Fimages%2Fno_data.png"></image>
+                            </view>
+                        </block>
+                    </block>
+                </view>
+            </at-tabs-pane>
+            <at-tabs-pane compid="{{$compid__15}}">
+                <view>
+                    <block>
+                        <block wx:if="{{singerMvList.length != 0}}">
+                            <view class="mv-list clearfix" wx:key="$original.id" bindtap="anonymousFunc2" wx:for="{{loopArray11}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey3}}">
+                                <view class="mv-left">
+                                    <image class="mv-img" src="{{item.$original.imgurl}}"></image>
+                                    <view class="icon">
+                                        <at-icon compid="{{item.$compid__10}}"></at-icon>{{item.$loopState__temp4}}万</view>
+                                </view>
+                                <view class="mv-right">
+                                    <view class="name">{{item.$original.name}}</view>
+                                    <view class="synopsis">{{item.$original.publishTime}}</view>
+                                </view>
+                            </view>
+                        </block>
+                        <block wx:else>
+                            <view class="img-box">
+                                <image class="no-data-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575102627721&di=9785845886184a9d2e6f871f3c442408&imgtype=0&src=http%3A%2F%2Fimg.58cdn.com.cn%2Fdist%2Fjxedt%2Fpc%2Fproducts%2Fjxregister%2Fimages%2Fno_data.png"></image>
+                            </view>
+                        </block>
+                    </block>
+                </view>
+            </at-tabs-pane>
+            <at-tabs-pane compid="{{$compid__16}}">
+                <view>
+                    <at-card compid="{{$compid__17}}">{{briefDesc}}</at-card>
+                </view>
+            </at-tabs-pane>
+        </at-tabs>
+    </div>
+</block>

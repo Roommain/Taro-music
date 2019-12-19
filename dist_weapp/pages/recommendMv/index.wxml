@@ -1,0 +1,68 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <view class="tags">
+            <block>
+                <block wx:if="{{tagName == '全部'}}">
+                    <at-tag compid="{{$compid__32}}">全部</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__33}}">全部</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '内地'}}">
+                    <at-tag compid="{{$compid__34}}">内地</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__35}}">内地</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '港台'}}">
+                    <at-tag compid="{{$compid__36}}">港台</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__37}}">港台</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '欧美'}}">
+                    <at-tag compid="{{$compid__38}}">欧美</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__39}}">欧美</at-tag>
+                </block>
+            </block>
+            <block>
+                <block wx:if="{{tagName == '日本'}}">
+                    <at-tag compid="{{$compid__40}}">日韩</at-tag>
+                </block>
+                <block wx:else>
+                    <at-tag compid="{{$compid__41}}">日韩</at-tag>
+                </block>
+            </block>
+        </view>
+        <view>
+            <block>
+                <block wx:if="{{mvList.length != 0}}">
+                    <view class="mv-box" wx:key="$original.id" bindtap="anonymousFunc0" wx:for="{{loopArray14}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                        <view class="mvImg">
+                            <image class="mv-img" src="{{item.$original.cover}}"></image>
+                        </view>
+                        <view class="bofang">
+                            <image class="bofang-img" src="{{imgsrc}}"></image>
+                        </view>
+                        <view class="mv-name">{{item.$original.name}}</view>
+                        <view class="artist-name">{{item.$original.artistName}}</view>
+                        <view class="index">{{index + 1}}</view>
+                    </view>
+                </block>
+                <block wx:else>
+                    <view class="img-box">
+                        <image class="no-data-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575102627721&di=9785845886184a9d2e6f871f3c442408&imgtype=0&src=http%3A%2F%2Fimg.58cdn.com.cn%2Fdist%2Fjxedt%2Fpc%2Fproducts%2Fjxregister%2Fimages%2Fno_data.png"></image>
+                    </view>
+                </block>
+            </block>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "at-icon": "../../../npm/taro-ui/dist/weapp/components/icon/index",
+    "at-load-more": "../../../npm/taro-ui/dist/weapp/components/load-more/index"
+  },
+  "navigationBarTitleText": "专辑详情"
+}

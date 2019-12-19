@@ -1,0 +1,88 @@
+.img {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+.singerImg {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+}
+.singer-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size:contain;
+}
+.recommendedImg {
+    position: relative;
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+}
+.recommended-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-size:contain;
+}
+.singer-name {
+    font-size: 24px;
+    text-align: center;
+}
+.recommended-name {
+    overflow: hidden;
+    width: 220px;
+    margin: 0 20px;
+    white-space: normal;
+    font-size: 24px;
+}
+.come-play {
+    position: fixed;
+    top: 45%;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d9e7e9;
+}
+.at-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.rotate{
+    animation: rotateAnimation 16s linear infinite;
+}
+.rotate-pause{
+    animation-play-state: paused
+}
+@keyframes rotateAnimation{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.movable-area {
+    position: fixed;
+    width: 100%;
+    height: 98vh;
+    z-index: 100;
+}
+.movable-view {
+    position: fixed;
+}
+.headset {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+.headset-img {
+    width: 100%;
+    height: 100%;
+}

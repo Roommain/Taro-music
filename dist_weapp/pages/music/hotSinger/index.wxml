@@ -1,0 +1,13 @@
+<block wx:if="{{$taroCompReady}}">
+    <div>
+        <view class="list clearfix" wx:key="$original.id" bindtap="anonymousFunc0" wx:for="{{loopArray8}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+            <view class="left">
+                <image class="singerImg" src="{{item.$original.picUrl}}"></image>
+            </view>
+            <view class="right">
+                <view class="singer-name">歌手：{{item.$original.name}}</view>
+                <view class="singer-name">专辑：{{item.$original.albumSize}} 单曲：{{item.$original.musicSize}}</view>
+            </view>
+        </view>
+    </div>
+</block>

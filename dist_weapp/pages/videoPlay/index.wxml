@@ -1,0 +1,10 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="components-page">
+        <video class="video" src="{{mvUrl}}" controls="{{true}}" autoplay="{{true}}" poster="{{mvCover}}" initial-time="0" id="video" loop="{{false}}" muted="{{false}}"></video>
+        <view class="centre">
+            <view>{{mvData.name}}</view>
+            <view class="statistics">发布：{{mvData.publishTime}} | 播放：{{anonymousState__temp}}万</view>
+            <view class="desc">{{mvData.desc}}</view>
+        </view>
+    </view>
+</block>

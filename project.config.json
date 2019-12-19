@@ -1,0 +1,27 @@
+{
+	"miniprogramRoot": "dist_weapp/",
+	"projectname": "myApp",
+	"description": "",
+	"appid": "wxc3d54b90bbd093d9",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {}
+}

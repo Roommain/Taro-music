@@ -1,0 +1,62 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="play">
+        <image class="bg-img" src="{{img}}"></image>
+        <view class="components">
+            <view class="music-name">{{songs.name}}</view>
+            <view class="singer-name">{{singerName}}</view>
+            <view class="singer-img">
+                <image class="{{isPlay ? 'rotate music-img' : 'rotate rotate-pause music-img'}}" src="{{img}}"></image>
+            </view>
+            <view class="lyric">{{anonymousState__temp}}</view>
+            <view class="music-play">
+                <view class="slider">
+                    <span class="start-time">{{anonymousState__temp2}}</span>
+                    <at-slider compid="{{$compid__25}}"></at-slider>
+                    <span class="end-time">{{anonymousState__temp3}}</span>
+                </view>
+                <view class="play-button">
+                    <view class="type" bindtap="anonymousFunc1">
+                        <block>
+                            <block wx:if="{{typeNum % 3 == 0}}">
+                                <at-icon compid="{{$compid__22}}"></at-icon>
+                            </block>
+                            <block wx:elif="{{typeNum % 3 == 1}}">
+                                <at-icon compid="{{$compid__23}}"></at-icon>
+                            </block>
+                            <block wx:else>
+                                <at-icon compid="{{$compid__24}}"></at-icon>
+                            </block>
+                        </block>
+                    </view>
+                    <view class="prev" bindtap="anonymousFunc2">
+                        <at-icon compid="{{$compid__26}}"></at-icon>
+                    </view>
+                    <view class="play-btn" bindtap="anonymousFunc3">
+                        <block>
+                            <block wx:if="{{isPlay}}">
+                                <at-icon compid="{{$compid__27}}"></at-icon>
+                            </block>
+                            <block wx:else>
+                                <at-icon compid="{{$compid__28}}"></at-icon>
+                            </block>
+                        </block>
+                    </view>
+                    <view class="next" bindtap="anonymousFunc4">
+                        <at-icon compid="{{$compid__29}}"></at-icon>
+                    </view>
+                    <view class="heart" bindtap="anonymousFunc5">
+                        <block>
+                            <block wx:if="{{isCollect}}">
+                                <at-icon compid="{{$compid__30}}"></at-icon>
+                            </block>
+                            <block wx:else>
+                                <at-icon compid="{{$compid__31}}"></at-icon>
+                            </block>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <at-message></at-message>
+    </view>
+</block>

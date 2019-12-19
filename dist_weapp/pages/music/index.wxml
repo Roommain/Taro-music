@@ -1,0 +1,54 @@
+<block wx:if="{{$taroCompReady}}">
+    <div>
+        <swiper class="test-h" indicator-color="#999" indicator-active-color="#333" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+            <swiper-item wx:key="id" wx:for="{{list}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                <view class="demo-text-1">
+                    <image class="img" src="{{item.imageUrl}}"></image>
+                </view>
+            </swiper-item>
+        </swiper>
+        <div>
+            <at-grid compid="{{$compid__0}}"></at-grid>
+        </div>
+        <div>
+            <at-list compid="{{$compid__1}}">
+                <at-list-item compid="{{$compid__2}}"></at-list-item>
+            </at-list>
+            <view class="at-row at-row--wrap singer">
+                <view class="at-col at-col-3" wx:key="$original.id" bindtap="anonymousFunc0" wx:for="{{loopArray1}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                    <view class="singerImg">
+                        <image class="singer-img" src="{{item.$original.picUrl}}"></image>
+                    </view>
+                    <view class="singer-name">{{item.$original.name}}</view>
+                </view>
+            </view>
+        </div>
+        <div>
+            <at-list compid="{{$compid__3}}">
+                <at-list-item compid="{{$compid__4}}"></at-list-item>
+            </at-list>
+            <view class="at-row at-row--wrap recommended">
+                <view class="at-col at-col-4" wx:key="$original.id" bindtap="anonymousFunc1" wx:for="{{loopArray2}}" wx:for-item="item" wx:for-index="__index1" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey2}}">
+                    <view class="recommendedImg">
+                        <image class="recommended-img" src="{{item.$original.picUrl}}"></image>
+                        <view class="headset">
+                            <image class="headset-img" src="{{imgsrc}}"></image>
+                        </view>
+                    </view>
+                    <view class="recommended-name">{{item.$original.name}}</view>
+                </view>
+            </view>
+        </div>
+        <movable-area class="movable-area">
+            <movable-view class="movable-view" direction="all">
+                <view>
+                    <block wx:if="{{songId != ''}}">
+                        <view class="come-play" bindtap="onButtonClick" data-e-tap-so="this">
+                            <image class="at-icon rotate" src="{{songImg}}"></image>
+                        </view>
+                    </block>
+                </view>
+            </movable-view>
+        </movable-area>
+    </div>
+</block>

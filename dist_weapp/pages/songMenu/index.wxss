@@ -1,0 +1,123 @@
+
+.mv-box {
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+  color: white;
+}
+.mvImg {
+  margin: 2%;
+  width: 96%;
+  height: 100%;
+}
+.mv-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.at-tag {
+  margin: 10rpx;
+}
+.tags {
+  text-align: center;
+}
+.bofang {
+  position: absolute;
+  top: 114rpx;
+  left: 45%;
+  width: 128rpx;
+  height: 128rpx;
+}
+.bofang-img {
+  width: 100%;
+  height: 100%;
+}
+.mv-name {
+  overflow: hidden;
+  position: absolute;
+  top: 20rpx;
+  left: 50rpx;
+  width: 600rpx;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.artist-name {
+  position: absolute;
+  top: 80rpx;
+  left: 50rpx;
+  font-size: 30rpx;
+}
+.play-count {
+  font-size: 30rpx;
+}
+.index {
+  position: absolute;
+  top: 200rpx;
+  left: 50rpx;
+  font-size: 100rpx;
+}
+.img {
+  width: 100%;
+  height: 350rpx;
+  background-size: cover;
+}
+.singerImg {
+  margin: 0 auto;
+  width: 160rpx;
+  height: 160rpx;
+}
+.singer-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: contain;
+}
+.recommendedImg {
+  position: relative;
+  margin: 0 auto;
+  width: 350rpx;
+  height: 350rpx;
+}
+.recommended-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30rpx;
+  background-size: contain;
+}
+.singer-name {
+  font-size: 24rpx;
+  text-align: center;
+}
+.recommended-name {
+  width: 350rpx;
+  margin: 0 20rpx;
+  white-space: normal;
+  font-size: 24rpx;
+}
+.come-play {
+  position: fixed;
+  top: 45%;
+  right: -45rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #d9e7e9;
+}
+.at-icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.headset {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  z-index: 10;
+  width: 40rpx;
+  height: 40rpx;
+}
+.headset-img {
+  width: 100%;
+  height: 100%;
+}

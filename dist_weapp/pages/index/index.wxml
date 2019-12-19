@@ -1,0 +1,24 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <at-search-bar compid="{{$compid__8}}"></at-search-bar>
+        <block wx:if="{{SearchList.length == 0}}">
+            <at-tag wx:key="index" wx:for="{{loopArray3}}" wx:for-item="item" wx:for-index="index" compid="{{item.$compid__5}}">{{item.$original.first}}</at-tag>
+        </block>
+        <block wx:if="{{SearchList.length == 0}}">
+            <view wx:key="index" class="history clearfix" wx:for="{{loopArray4}}" wx:for-item="item" wx:for-index="index">
+                <view class="history-name" bindtap="anonymousFunc0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">{{item.$original}}</view>
+                <at-icon compid="{{item.$compid__6}}"></at-icon>
+            </view>
+        </block>
+        <view class="{{songId == item.$original.id ? 'list clearfix active-list' : 'list clearfix'}}" wx:key="$original.id" bindtap="anonymousFunc2" wx:for="{{loopArray5}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey3}}">
+            <view class="right">
+                <view class="name">{{item.$original.name}}</view>
+                <view class="synopsis">
+                    <span wx:key="index" wx:for="{{item.$original.artists}}" wx:for-item="item2" wx:for-index="index">{{item2.name}} {{index + 1 < item.$original.artists.length ? '/' : ''}}</span>- {{item.$original.name}}</view>
+            </view>
+            <view class="play">
+                <at-icon compid="{{item.$compid__7}}"></at-icon>
+            </view>
+        </view>
+    </view>
+</block>
