@@ -12,26 +12,6 @@ github地址：[基于Taro微信小程序音乐播放器](https://github.com/Roo
 
 <br/>
 
-### 项目截图
-<table>
-	 <tr>
-        <td><img src='https://img-blog.csdnimg.cn/20190308124144379.gif'></img></td>
-        <td><img src='https://img-blog.csdnimg.cn/20190308124247852.gif'></img></td>
-        <td><img src='https://img-blog.csdnimg.cn/20190308134737187.gif'></img></td>
-         <td><img src='https://img-blog.csdnimg.cn/20190308134901875.gif'></img></td>
-    </tr>
-</table>
-<table>
-	 <tr>
-        <td><img src='https://img-blog.csdnimg.cn/2019030813592034.png'></img></td>
-        <td><img src='https://img-blog.csdnimg.cn/20190308140452717.gif'></img></td>
-        <td><img src='https://img-blog.csdnimg.cn/20190308141114131.gif'></img></td>
-        <td><img src='https://img-blog.csdnimg.cn/20190308140526928.gif'></img></td>
-    </tr>
-</table>
-
-<br/>
-
 
 ### 实现的功能
 - [x] 音乐 分类 搜索
